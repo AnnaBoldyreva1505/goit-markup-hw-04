@@ -7,6 +7,7 @@
     --accent-color: #2196F3;
     --text-black: black;
     --text-white: white;
+    --icon-fill: #AFB1B8;
 }
 
 body {
@@ -151,7 +152,16 @@ img {
 }
 
 
+.icon-header {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 10px;
+}
 
+.icon-header-phone {
+    width: 10px;
+    height: 16px;
+}
 
 /* FOOTER */
 .footer {
@@ -247,6 +257,7 @@ img {
     align-items: center letter-spacing: 0.06em; */
     color: var(--text-white);
     background-color: #2196F3;
+    background-image: none;
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
     padding: 10px 32px;
@@ -283,6 +294,7 @@ img {
 
 /*  HERO TITLE (h1) */
 .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -302,10 +314,28 @@ img {
     margin: auto;
 }
 
+
+
 /* VALUES SECTION */
 .values {
     background-color: #ffffff;
     padding-bottom: 0%;
+}
+
+.values-blocks{
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values-blocks-icon{
+    width: 70px;
+    height: 70px;
+    
 }
 
 .values-list {
@@ -398,6 +428,46 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-second);
+    margin-bottom: 16px;
+}
+
+.our-team-item{
+    display: flex;
+    justify-content: center;
+}
+
+.our-team-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+}
+
+.our-team-social-link:hover,
+.our-team-social-link:focus{
+    background-color: var(--accent-color);
+}
+
+.our-team-item-logo{
+    fill: var(--icon-fill);
+}
+
+.our-team-social-link:hover .our-team-item-logo,
+.our-team-social-link:focus .our-team-item-logo{
+    fill: var(--text-white);
+}
+
+
+/* .our-team-item-logo{
+    width: 20px;
+    height: 20px;
+} */
+
+.our-team-item-list:not(:last-child) {
+    margin-right: 10px;
 }
 
 
