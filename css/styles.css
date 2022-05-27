@@ -539,6 +539,12 @@ img {
     margin-right: 30px;
 }
 
+.clients-item-list{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
 
 .clients-link{
     display: flex;
