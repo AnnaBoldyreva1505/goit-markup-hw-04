@@ -164,13 +164,12 @@ img {
 /* FOOTER */
 .footer {
     background-color: #2F303A;
-    /* padding-top: 60px; */
+    padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
 }
 
 .footer-contacts{
-    padding-top: 60px;
     margin-right: 70px;
 }
 .footer-contacts-block{
@@ -181,6 +180,7 @@ img {
 .footer-block{
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .footer-address {
@@ -229,7 +229,6 @@ img {
 .footer-social {
     display: flex;
     flex-direction: column;
-    padding-top: 72px;
 }
 
 .footer-header {
@@ -339,8 +338,9 @@ img {
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
     background-repeat: no-repeat;
-    background-size: 1600px;
-    background-position: center;
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -371,11 +371,10 @@ img {
 .values-blocks {
     background-color: #F5F4FA;
     margin-bottom: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120px;
 }
 
 .values-blocks-icon {
@@ -558,6 +557,8 @@ img {
     border: 1px solid #2196F3;
     border-radius: 4px;
 }
+
+
 
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo{
