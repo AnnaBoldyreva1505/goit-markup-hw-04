@@ -329,7 +329,9 @@ img {
 .nav:focus {
     color: var(--text-white);
     background-color: var(--accent-color);
-}
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    } 
 
 
 /* =================== INDEX. HTML STYLES ========================*/
@@ -567,6 +569,8 @@ img {
 
 .clients-logo {
     fill: #AFB1B8;
+    width:106px; 
+    height:60px;
 }
 
 .clients-logo:hover,
@@ -581,6 +585,10 @@ fill: var(--accent-color);
 
 .portfolio {
     background-color: #ffffff;
+}
+
+.portfolio-design{
+display: block;
 }
 
 .portfolio-design:hover,
@@ -598,12 +606,6 @@ fill: var(--accent-color);
     margin-right: 8px;
 }
 
-.portfolio-btn-margin:hover,
-.portfolio-btn-margin:focus {
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio-btn-margin:nth-child(5n) {
     margin-right: 0px;
 }
@@ -614,9 +616,9 @@ fill: var(--accent-color);
 }
 
 .portfolio-margin {
-    flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+   flex-basis: calc((100% - 90px) / 3);
+   margin-right: 30px;
+   margin-bottom: 30px;
 }
 
 
